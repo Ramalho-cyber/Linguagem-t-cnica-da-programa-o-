@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-int main ([]);
+int main ([]){
 
 //exercicio 8
 	int x1, x2, y1, y2;
@@ -21,4 +21,6 @@ int main ([]);
 	dist = sqrt(cat1+cat2);
 	
 	printf("Distancia: %f", dist);
+return 0;
+}
 	
