@@ -28,25 +28,7 @@ int main(int argc, char *argv[]) {
 	resultado = resultado/2;
 	
 	printf("O numero %d em binario = %d%d%d%d%d%d%d", n, resultado%2, bit2, bit4, bit8, bit16, bit32, bit64);
-	
-	//exercicio 8
-	int x1, x2, y1, y2;
-	float dist;
-	printf("Entre com os valores para p1(x1,y1)")
-	scanf("(%d)", &x1);
-	scanf("(%d)", &y1);
-	
-	printf("Entre com os valores para p1(x2,y2)")
-	scanf("(%d)", &x2);
-	scanf("(%d)", &y2);
-	
-	cat1 = pow(x2-x1, 2);
-	cat2 = pow(y2-y1, 2);
-	
-	dist = sqrt(cat1+cat2);
-	
-	printf("Distancia: %f", dist);
-	
+
 
 	return 0;
 }
