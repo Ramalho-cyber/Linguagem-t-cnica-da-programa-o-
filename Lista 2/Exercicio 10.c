@@ -4,24 +4,14 @@
 int main(){
 
 
-    double a, b, c;
-    double maiorAB, maiorFinal;
- 
-    printf("Digite o primeiro valor (a): ");
-    scanf("%lf", &a);
- 
-    printf("Digite o segundo valor (b): ");
-    scanf("%lf", &b);
- 
-    printf("Digite o terceiro valor (c): ");
-    scanf("%lf", &c);
- 
-  
-    maiorAB = (a + b + fabs(a - b)) / 2.0;
- 
-    maiorFinal = (maiorAB + c + fabs(maiorAB - c)) / 2.0;
- 
-    printf("%.2lf eh o maior\n", maiorFinal);
+   	int Menor,a,b,c,MaiorTemp,maior;
 
-    return 0;
+	printf("insira tres valores: ");
+	scanf("%d %d %d",&a,&b,&c);
+	
+	MaiorTemp = ((a+b+abs(a-b))/2);
+	maior = ((MaiorTemp+c+abs(MaiorTemp-c))/2);
+	printf("o maior e: %d" , maior);
+
+	return 0;
 }
