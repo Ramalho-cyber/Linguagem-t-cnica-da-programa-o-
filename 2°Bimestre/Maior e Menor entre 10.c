@@ -1,7 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int compara (int a, int b){
+int comparaMaior (int a, int b){
+	if(a > b)return b;
+	else return a;
+}
+int comparaMenor (int a, int b){
 	if(a < b)return b;
 	else return a;
 }
@@ -13,10 +17,22 @@ int main(int argc, char *argv[]) {
 	for(i=1; i<10; i++){
 		scanf("%d", &valores[i]);
 	}
-	printf("\n");
-	for(i=9; i>=0; i--){
-		printf("|%d|", valores[i]);
+	maior = valores[0];
+	for(i=0; i<5; i+=2){
+		int maior_temp = comparaMaior(valores[i],valores[i+1]);
+		maior = comparaMaior(maior_temp, maior);
 	}
+	menor = valores[5];
+	for(i=6; i<9; i+=2){
+		int menor_temp = comparaMenor(valores[i],valores[i+1]);
+		menor = comparaMenor(menor_temp, menor);
+	}
+	printf("\n");
+	printf("maior |%d|", maior);
+
+	printf("\n");
+	printf("menor |%d|", menor);
+	
 		
 	return 0;
 }
