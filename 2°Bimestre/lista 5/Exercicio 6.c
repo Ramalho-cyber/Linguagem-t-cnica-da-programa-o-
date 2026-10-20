@@ -1,15 +1,24 @@
 #include <stdio.h>
- 
-int main() {
- 
-    int I, A, M, D;
-    scanf("%d",&I);
-    
-    A = I / 365;
-    M = (I - A*365)/30;
-    D = I - A*365 - M*30;
-   
-    printf("%d ano(s)\n%d mes(es)\n%d dia(s)\n",A,M,D);
-   
-    return 0;
+#include <stdlib.h>
+#include <math.h>
+
+int main ([]){
+
+	int x1, x2, y1, y2;
+	float dist;
+	printf("Entre com os valores para p1(x1,y1)")
+	scanf("(%d)", &x1);
+	scanf("(%d)", &y1);
+	
+	printf("Entre com os valores para p1(x2,y2)")
+	scanf("(%d)", &x2);
+	scanf("(%d)", &y2);
+	
+	cat1 = pow(x2-x1, 2);
+	cat2 = pow(y2-y1, 2);
+	
+	dist = sqrt(cat1+cat2);
+	
+	printf("Distancia: %f", dist);
+return 0;
 }
