@@ -1,14 +1,17 @@
 #include <stdio.h>
- 
-int main() {
- 
-  
-    double salario,vendas,bonus;
-    scanf("%lf",&salario); 
-    scanf("%lf",&vendas);
-    
-    bonus = salario + (vendas*0.15);
-    printf("TOTAL = R$ %.2lf\n",bonus);
- 
-    return 0;
+#include <math.h>
+
+int main(){
+
+
+   	int Menor,a,b,c,MaiorTemp,maior;
+
+	printf("insira tres valores: ");
+	scanf("%d %d %d",&a,&b,&c);
+	
+	MaiorTemp = ((a+b+abs(a-b))/2);
+	maior = ((MaiorTemp+c+abs(MaiorTemp-c))/2);
+	printf("o maior e: %d" , maior);
+
+	return 0;
 }
